@@ -1,0 +1,31 @@
+# Load required libraries
+library(gplots)
+library(lattice)
+library(RColorBrewer)
+library(ggplot2)
+
+# Generate sample data
+a <- sample(0:255, 144)
+
+# Create a matrix
+mat <- matrix(a, 12, 12)
+
+# Plot using image() function
+image(mat)
+
+# Alternatively, using ggplot2
+myImagePlot <- function(mat) {
+  # Convert matrix to data frame
+  mat_df <- as.data.frame(as.table(mat))
+  colnames(mat_df) <- c("X", "Y", "Value")
+  
+  # Create ggplot object
+  ggplot(mat_df, aes(x = X, y = Y, fill = Value)) +
+    geom_tile() +
+    scale_fill_gradient(low = "white", high = "blue") +  # Adjust color scale as needed
+    labs(title = "My Image Plot", x = "X", y = "Y") +
+    theme_minimal()
+}
+
+# Plot using ggplot2
+myImagePlot(mat)
