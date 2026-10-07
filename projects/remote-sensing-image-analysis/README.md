@@ -6,94 +6,56 @@
 
 ## Overview
 
-This project combined theoretical remote-sensing analysis with a practical image-analysis exercise. It examined trade-offs in Earth-observation satellite design, explored the value of microwave sensing alongside optical imagery, designed a multisensor strategy for monitoring an active landslide, and produced a set of remote-sensing image products.
-
-## Satellite observation trade-offs
-
-The project reviewed the relationship between three important Earth-observation parameters:
-
-- **Spatial resolution** — the level of detail represented in an image.
-- **Swath size** — the width of the Earth's surface captured in a single pass.
-- **Revisit period** — how frequently a sensor can observe the same location.
-
-The assessment discussed how these parameters are interconnected and how improvements in one can affect the others when designing an observation strategy.
-
-## Optical and microwave remote sensing
-
-The study explored how Synthetic Aperture Radar (SAR) can complement visible and near-infrared satellite imagery. The report highlighted several capabilities of radar data, including:
-
-- Operation during day or night.
-- Monitoring through cloud and adverse weather conditions.
-- Terrain and surface-change detection.
-- Applications in landslide and glacier monitoring.
-- Forest-structure and vegetation-change assessment.
-- Soil-moisture and surface-water monitoring.
+This project combined theoretical remote-sensing analysis with a practical image-analysis exercise. It examined trade-offs in Earth-observation satellite design, explored the value of microwave sensing alongside optical imagery, designed a multisensor strategy for monitoring an active landslide, and produced remote-sensing image products.
 
 ## Landslide monitoring strategy
 
-A core part of the project was the design of a monitoring approach that combines ground-based, airborne and satellite observations.
+The proposed strategy combined ground-based, airborne and satellite observations. Ground monitoring included inclinometers, extensometers/crack meters, tiltmeters, geophones, LiDAR and weather observations; aerial monitoring considered high-resolution, thermal, LiDAR, multispectral and hyperspectral data; and satellite monitoring provided wider-area repeated observations.
 
-### Ground-based monitoring
+![Ground-based landslide monitoring sensors](assets/ground_based_sensors.png)
 
-The proposed strategy included instruments such as:
+![Aerial and satellite remote-sensing platforms](assets/aerial_platform_sensors.png)
 
-- Inclinometers
-- Extensometers / crack meters
-- Tiltmeters
-- Geophones
-- Ground-based LiDAR
-- Weather stations
+The combined approach was intended to improve temporal and spatial coverage, reliability, cross-validation and access to multispectral information.
 
-These were considered for monitoring slope displacement, sliding behaviour, topographic change and local environmental conditions.
+## Remote-sensing image analysis
 
-### Aerial and UAV observations
+### True-colour image
 
-The aerial component proposed high-resolution imagery for detailed mapping together with:
+![True-colour remote-sensing image](assets/true_colour_map.png)
 
-- Thermal imagery
-- LiDAR surveys
-- Multispectral imagery
-- Hyperspectral imagery
+The true-colour product provides a visually familiar representation of the wildfire-affected landscape and smoke plume.
 
-These data sources were considered useful for tracking surface change, vegetation condition, moisture and other characteristics of the landslide environment.
+### False-colour image
 
-### Satellite observations
+![False-colour remote-sensing image](assets/false_colour_map.png)
 
-The satellite component was designed to provide wider-area coverage and repeated observations. The project considered optical imagery, radar-based displacement monitoring, change-detection methods, machine-learning and remote-sensing algorithms, and vegetation indices.
+The false-colour product increases spectral contrast and helps distinguish vegetation and affected areas.
 
-## Why combine platforms?
+### Pseudo-colour image
 
-The project identified several benefits of a multisensor monitoring approach:
+![Pseudo-colour remote-sensing image](assets/pseudo_colour_map.png)
 
-- Improved temporal and spatial coverage
-- Greater redundancy and reliability
-- Cross-validation between ground, aerial and satellite observations
-- Better support for real-time or regular monitoring
-- Access to information across multiple parts of the electromagnetic spectrum
+The assessment used spectral band combinations to highlight contrast between burned and non-burned vegetation.
 
-## Practical image-analysis outputs
+### Thermal enhancement and fire signature
 
-The practical section of the assessment included multiple mapped image products, including:
+![Enhanced thermal image](assets/enhanced_image.png)
 
-- True-colour imagery
-- False-colour imagery
-- Pseudo-colour imagery
-- Enhanced colour-classification mapping
-- Enhanced imagery overlaid with true-colour imagery
+![Isolated TIR signature](assets/isolated_tir_signature.png)
 
-The assessment also considered why near-infrared and thermal-infrared bands can be useful for observing active wildfire conditions when visible imagery is obstructed by smoke.
+Thermal-infrared information was used to isolate active heat signatures associated with the wildfire.
+
+### Enhanced overlay on true colour
+
+![Enhanced fire signature overlaid on true-colour imagery](assets/enhanced_overlay_true_colour.png)
+
+This final overlay combines the mapped thermal signature with the true-colour scene to show the spatial relationship between active heat signatures, smoke and the surrounding landscape.
+
+## Optical and microwave remote sensing
+
+The study explored how Synthetic Aperture Radar (SAR) can complement visible and near-infrared satellite imagery, particularly through day/night operation, cloud and adverse-weather capability, terrain and surface-change detection, and applications in landslide, glacier, forest, soil-moisture and surface-water monitoring.
 
 ## Skills demonstrated
 
-- Remote-sensing theory
-- Satellite sensor trade-off analysis
-- Multispectral and radar concepts
-- Landslide and geohazard monitoring design
-- Integration of ground, airborne and satellite observations
-- Remote-sensing image interpretation
-- Environmental change detection
-- Technical GIS and Earth-observation reporting
-
-## Portfolio development opportunities
-
-A future version of this project could be strengthened by publishing selected map outputs, documenting the image-processing workflow step by step, and recreating selected analyses using an open workflow such as QGIS, Python or Google Earth Engine.
+Remote-sensing theory · Satellite sensor trade-off analysis · Multispectral and radar concepts · Landslide and geohazard monitoring design · Remote-sensing image interpretation · Environmental change detection · Technical GIS/Earth-observation reporting
