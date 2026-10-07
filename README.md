@@ -1,4 +1,4 @@
-# Clement Oghenovo Bosin
+# Clement Bosin
 
 ## GIS & Geospatial Analyst
 
@@ -69,8 +69,7 @@ I am continuing to develop this GitHub profile into a practical geospatial portf
 
 ## Contact
 
-- **Name:** Clement Oghenovo Bosin
-- **GitHub:** @ClemsyBosin
+- **Name:** Clement Bosin
 
 ---
 
